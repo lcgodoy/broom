@@ -201,20 +201,6 @@ the <code>data</code> argument.</p></td>
     <div class='dont-index'><p><code><a href='https://generics.r-lib.org/reference/tidy.html'>tidy()</a></code>, <code><a href='https://mclust-org.github.io/mclust/reference/Mclust.html'>mclust::Mclust()</a></code></p>
 <p>Other mclust tidiers: 
 <code><a href='augment.Mclust.html'>augment.Mclust</a>()</code></p></div>
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>A <code><a href='https://tibble.tidyverse.org/reference/tibble.html'>tibble::tibble()</a></code> with columns:</p>
-<dt>proportion</dt><dd><p>The mixing proportion of each component</p></dd>
-  <dt>size</dt><dd><p>Number of points assigned to cluster.</p></dd>
-  <dt>mean</dt><dd><p>The mean for each component. In case of 2+ dimensional models,
-    a column with the mean is added for each dimension. NA for noise
-    component</p></dd>
-  <dt>variance</dt><dd><p>In case of one-dimensional and spherical models,
-    the variance for each component, omitted otherwise. NA for noise
-    component</p></dd>
-  <dt>component</dt><dd><p>Cluster id as a factor.</p></dd>
-
-
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>

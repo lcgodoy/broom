@@ -224,18 +224,6 @@ missingness in the data beforehand.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='https://generics.r-lib.org/reference/tidy.html'>tidy()</a></code>, <code><a href='https://rdrr.io/pkg/geepack/man/geeglm.html'>geepack::geeglm()</a></code></p></div>
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>A <code><a href='https://tibble.tidyverse.org/reference/tibble.html'>tibble::tibble()</a></code> with columns:</p>
-<dt>conf.high</dt><dd><p>Upper bound on the confidence interval for the estimate.</p></dd>
-  <dt>conf.low</dt><dd><p>Lower bound on the confidence interval for the estimate.</p></dd>
-  <dt>estimate</dt><dd><p>The estimated value of the regression term.</p></dd>
-  <dt>p.value</dt><dd><p>The two-sided p-value associated with the observed statistic.</p></dd>
-  <dt>statistic</dt><dd><p>The value of a T-statistic to use in a hypothesis that the regression term is non-zero.</p></dd>
-  <dt>std.error</dt><dd><p>The standard error of the regression term.</p></dd>
-  <dt>term</dt><dd><p>The name of the regression term.</p></dd>
-
-
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
@@ -257,8 +245,8 @@ missingness in the data beforehand.</p>
 #&gt;     fd(dose, parmMat[, 1], parmMat[, 2], parmMat[, 3], parmMat[, 
 #&gt;         4], parmMat[, 5])
 #&gt; }
-#&gt; &lt;bytecode: 0x55dbb17d5630&gt;
-#&gt; &lt;environment: 0x55dbc452ddd0&gt;
+#&gt; &lt;bytecode: 0x5627e2b53730&gt;
+#&gt; &lt;environment: 0x5627ebccc380&gt;
 #&gt; 
 #&gt; $ssfct
 #&gt; function (dframe) 
@@ -277,8 +265,8 @@ missingness in the data beforehand.</p>
 #&gt;     befVal &lt;- c(bVal, x[which.max(y)], 1)
 #&gt;     return(c(befVal[1], cdVal, befVal[2:3])[is.na(fixed)])
 #&gt; }
-#&gt; &lt;bytecode: 0x55dbba6d80c8&gt;
-#&gt; &lt;environment: 0x55dbc452eb28&gt;
+#&gt; &lt;bytecode: 0x5627e7d4abe8&gt;
+#&gt; &lt;environment: 0x5627ebcccff8&gt;
 #&gt; 
 #&gt; $names
 #&gt; [1] "b" "c" "d" "e" "f"
@@ -291,8 +279,8 @@ missingness in the data beforehand.</p>
 #&gt;     attr(fd(dose, parmMat[, 1], parmMat[, 2], parmMat[, 3], parmMat[, 
 #&gt;         4], parmMat[, 5]), "gradient")[, notFixed]
 #&gt; }
-#&gt; &lt;bytecode: 0x55dbb17d2b08&gt;
-#&gt; &lt;environment: 0x55dbc452ddd0&gt;
+#&gt; &lt;bytecode: 0x5627e2b55d18&gt;
+#&gt; &lt;environment: 0x5627ebccc380&gt;
 #&gt; 
 #&gt; $deriv2
 #&gt; NULL
@@ -318,8 +306,8 @@ missingness in the data beforehand.</p>
 #&gt;     attr(dFct(dose, parmMat[, 1], parmMat[, 2], parmMat[, 3], 
 #&gt;         parmMat[, 4], parmMat[, 5]), "gradient")
 #&gt; }
-#&gt; &lt;bytecode: 0x55dbb17d0398&gt;
-#&gt; &lt;environment: 0x55dbc452ddd0&gt;
+#&gt; &lt;bytecode: 0x5627e2b54888&gt;
+#&gt; &lt;environment: 0x5627ebccc380&gt;
 #&gt; 
 #&gt; $edfct
 #&gt; function (parm, respl, reference, type, ...) 
@@ -354,8 +342,8 @@ missingness in the data beforehand.</p>
 #&gt;         parmVec[5]), "gradient")
 #&gt;     return(list(EDp, EDder[notFixed]))
 #&gt; }
-#&gt; &lt;bytecode: 0x55dbb16d1c08&gt;
-#&gt; &lt;environment: 0x55dbc452ddd0&gt;
+#&gt; &lt;bytecode: 0x5627e2b5dc70&gt;
+#&gt; &lt;environment: 0x5627ebccc380&gt;
 #&gt; 
 #&gt; $name
 #&gt; [1] "family"
@@ -372,8 +360,8 @@ missingness in the data beforehand.</p>
 #&gt;     parmVec[indexVec] &lt;- parm
 #&gt;     parmVec[parmNo]
 #&gt; }
-#&gt; &lt;bytecode: 0x55dbb168e978&gt;
-#&gt; &lt;environment: 0x55dbc5243c28&gt;
+#&gt; &lt;bytecode: 0x5627e2f93040&gt;
+#&gt; &lt;environment: 0x5627ebcca700&gt;
 #&gt; 
 #&gt; $upperAs
 #&gt; function (parm) 
@@ -381,8 +369,8 @@ missingness in the data beforehand.</p>
 #&gt;     parmVec[indexVec] &lt;- parm
 #&gt;     parmVec[parmNo]
 #&gt; }
-#&gt; &lt;bytecode: 0x55dbb168e978&gt;
-#&gt; &lt;environment: 0x55dbc5243e90&gt;
+#&gt; &lt;bytecode: 0x5627e2f93040&gt;
+#&gt; &lt;environment: 0x5627ebcca968&gt;
 #&gt; 
 #&gt; $monoton
 #&gt; [1] NA

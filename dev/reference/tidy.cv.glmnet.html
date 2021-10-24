@@ -203,20 +203,6 @@ the <code>data</code> argument.</p></td>
 <code><a href='glance.cv.glmnet.html'>glance.cv.glmnet</a>()</code>,
 <code><a href='glance.glmnet.html'>glance.glmnet</a>()</code>,
 <code><a href='tidy.glmnet.html'>tidy.glmnet</a>()</code></p></div>
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>A <code><a href='https://tibble.tidyverse.org/reference/tibble.html'>tibble::tibble()</a></code> with columns:</p>
-<dt>lambda</dt><dd><p>Value of penalty parameter lambda.</p></dd>
-  <dt>nzero</dt><dd><p>Number of non-zero coefficients for the given lambda.</p></dd>
-  <dt>std.error</dt><dd><p>The standard error of the regression term.</p></dd>
-  <dt>conf.low</dt><dd><p>lower bound on confidence interval for cross-validation
-    estimated loss.</p></dd>
-  <dt>conf.high</dt><dd><p>upper bound on confidence interval for cross-validation
-    estimated loss.</p></dd>
-  <dt>estimate</dt><dd><p>Median loss across all cross-validation folds for a given
-    lamdba</p></dd>
-
-
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
